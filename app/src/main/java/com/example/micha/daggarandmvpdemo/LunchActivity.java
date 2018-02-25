@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 
 public class LunchActivity extends AppCompatActivity implements LunchMVPContract.View {
 
+    //@presenter: field injected so it's methods can interact with view data
     @Inject
     LunchMVPContract.Presenter presenter;
 
@@ -35,6 +36,8 @@ public class LunchActivity extends AppCompatActivity implements LunchMVPContract
         setContentView(R.layout.activity_lunch);
         ButterKnife.bind(this);
 
+        //Casting the injected component to application gives it the correct global app scope.
+        //Don't forget to change the name in the Manifest (see note there).
         ((LunchApp) getApplication()).getComponent().inject(this);
 
         orderButton.setOnClickListener(new View.OnClickListener() {

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.micha.daggarandmvpdemo">
 
+    <!--@name: this allows the casting of the injected component in each injection receiving class-->
     <application
         android:name=".LunchApp"
         android:allowBackup="true"

@@ -5,7 +5,7 @@ import com.example.micha.daggarandmvpdemo.LunchMVP.LunchMVPContract;
 /**
  * Created by micha on 2/23/2018.
  */
-
+//simple POJO called to access specific Lunch instance fields
 public class Lunch {
 
     String lunchName, dayOfWeek;

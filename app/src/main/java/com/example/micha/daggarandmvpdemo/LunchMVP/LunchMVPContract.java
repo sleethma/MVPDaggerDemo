@@ -6,7 +6,7 @@ import com.example.micha.daggarandmvpdemo.LunchRepo;
 /**
  * Created by micha on 2/23/2018.
  */
-
+//master contract b/n M-V-P
 public interface LunchMVPContract {
 
     interface View {
@@ -38,6 +38,8 @@ public interface LunchMVPContract {
         Lunch getLunchItem();
 
         void saveLunchItem(String lunchItem, String dayOfWeek);
+
+        boolean isSaved();
 
     }
 }
