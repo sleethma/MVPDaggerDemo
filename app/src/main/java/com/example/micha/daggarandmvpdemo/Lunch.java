@@ -8,12 +8,11 @@ import com.example.micha.daggarandmvpdemo.LunchMVP.LunchMVPContract;
 
 public class Lunch {
 
-    String lunchName, dayOfWeek, lunchId;
+    String lunchName, dayOfWeek;
 
-    public Lunch(String lunchName, String dayOfWeek, String lunchId) {
+    public Lunch(String lunchName, String dayOfWeek) {
         this.lunchName = lunchName;
         this.dayOfWeek = dayOfWeek;
-        this.lunchId = lunchId;
     }
 
     public String getLunchName() {
@@ -23,11 +22,4 @@ public class Lunch {
     public String getDayOfWeek(){
         return dayOfWeek;
     }
-
-    public String getLunchId(){
-        return lunchId;
-    }
-
-
-
 }

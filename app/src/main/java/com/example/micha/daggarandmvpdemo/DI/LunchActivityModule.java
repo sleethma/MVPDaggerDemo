@@ -1,9 +1,9 @@
 package com.example.micha.daggarandmvpdemo.DI;
 
-import com.example.micha.daggarandmvpdemo.Lunch;
 import com.example.micha.daggarandmvpdemo.LunchMVP.LunchMVPContract;
 import com.example.micha.daggarandmvpdemo.LunchMVP.LunchModel;
 import com.example.micha.daggarandmvpdemo.LunchMVP.LunchPresenter;
+import com.example.micha.daggarandmvpdemo.LunchMemory;
 import com.example.micha.daggarandmvpdemo.LunchRepo;
 
 import dagger.Module;

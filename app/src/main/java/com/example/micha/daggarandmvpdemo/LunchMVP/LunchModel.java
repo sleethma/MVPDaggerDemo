@@ -19,4 +19,9 @@ public class LunchModel implements LunchMVPContract.Model {
     public Lunch getLunchItem() {
         return repo.getLunch();
     }
+
+    @Override
+    public void saveLunchItem(String lunchItem, String dayOfWeek) {
+        repo.saveLunch(lunchItem, dayOfWeek);
+    }
 }

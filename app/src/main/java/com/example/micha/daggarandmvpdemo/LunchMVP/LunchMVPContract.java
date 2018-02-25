@@ -9,18 +9,35 @@ import com.example.micha.daggarandmvpdemo.LunchRepo;
 
 public interface LunchMVPContract {
 
-    interface View{
-        public String getDishName();
-        public String getDayOfWeek();
-        public String getId();
+    interface View {
+        String getDishName();
+
+        String getDayOfWeek();
+
+        void messageSaveSuccessful();
+
+        void messageEnterFieldInfo();
+
+        void setDishName(String dishName);
+
+        void setDayOfWeek(String dayOfWeek);
     }
 
-    interface Presenter{
-       public void setView(LunchMVPContract.View view);
+    interface Presenter {
+        void setView(LunchMVPContract.View view);
+
+        void onSetLunchButtonClick();
+
+        void getLastLunch();
+
+
     }
 
-    interface Model{
+    interface Model {
 
         Lunch getLunchItem();
+
+        void saveLunchItem(String lunchItem, String dayOfWeek);
+
     }
 }

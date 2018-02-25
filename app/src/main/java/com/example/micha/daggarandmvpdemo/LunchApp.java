@@ -1,6 +1,11 @@
-package com.example.micha.daggarandmvpdemo.DI;
+package com.example.micha.daggarandmvpdemo;
 
 import android.app.Application;
+
+import com.example.micha.daggarandmvpdemo.DI.ApplicationModule;
+import com.example.micha.daggarandmvpdemo.DI.DaggerLunchComponent;
+import com.example.micha.daggarandmvpdemo.DI.LunchActivityModule;
+import com.example.micha.daggarandmvpdemo.DI.LunchComponent;
 
 /**
  * Created by micha on 2/23/2018.

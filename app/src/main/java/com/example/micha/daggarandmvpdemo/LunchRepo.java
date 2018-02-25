@@ -7,4 +7,6 @@ package com.example.micha.daggarandmvpdemo;
 public interface LunchRepo {
 
     Lunch getLunch();
+
+    void saveLunch(String lunchItem, String dayOfWeek);
 }

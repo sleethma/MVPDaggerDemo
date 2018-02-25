@@ -15,34 +15,26 @@
             android:id="@+id/tv_label_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="OrderId"
+            android:paddingTop="12dp"
             android:textAlignment="center"
-            android:paddingTop="6dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"/>
-        <TextView
-            android:id="@+id/lunch_ticket_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="OrderId"
-            android:textAlignment="center"
-            android:paddingTop="6dp"
-            android:textColor="@color/colorPrimaryDark"/>
-
+            android:text="Lunch Du Jour"
+            android:visibility="visible"/>
 
         <EditText
             android:id="@+id/et_dish_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Dish Name"
-            />
+            android:hint="Dish Name" />
+
 
         <EditText
             android:id="@+id/et_day_of_week"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Day of Week"
-            />
+            android:hint="Day of Week" />
 
         <Button
             android:id="@+id/b_order"
